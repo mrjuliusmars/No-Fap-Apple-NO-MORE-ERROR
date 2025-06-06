@@ -1,0 +1,189 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "D9528F33",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6738294833",
+    "_developerTeamID" : "U7CGPN8W7H",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 746670900.11067498,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "FE5AA5DA",
+      "localizations" : [
+
+      ],
+      "name" : "Premium Subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "29.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6736849372",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Get unlimited access to Overkum premium features including advanced tracking, personalized insights, and exclusive content to support your recovery journey.",
+              "displayName" : "Unlimited (1 year)",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "overkum_yearly_29_99",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Unlimited (1 year)",
+          "subscriptionGroupID" : "FE5AA5DA",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "19.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6736849394",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Get unlimited access to Overkum premium features at a discounted price - limited time offer!",
+              "displayName" : "Discount Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "overkum_yearly_19_99",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Discount Subscription",
+          "subscriptionGroupID" : "FE5AA5DA",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "FE5AA5DB",
+      "localizations" : [
+
+      ],
+      "name" : "Free Trial Subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "19.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "D9528F34",
+          "introductoryOffer" : {
+            "internalID" : "20593681",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Try Overkum Premium free for 1 week, then $19.99/year. Cancel anytime during trial.",
+              "displayName" : "Unlimited (1 year) - Free Trial",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "overkum_trial_19_99",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Free Trial Yearly Subscription",
+          "subscriptionGroupID" : "FE5AA5DB",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "subscriptions" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

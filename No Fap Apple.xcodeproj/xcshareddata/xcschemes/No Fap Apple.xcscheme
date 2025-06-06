@@ -36,7 +36,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "226AF4A82DE607EA0031A358"
-               BuildableName = "No Fap AppleTests.xctest"
+               BuildableName = "Info.plist.xctest"
                BlueprintName = "No Fap AppleTests"
                ReferencedContainer = "container:No Fap Apple.xcodeproj">
             </BuildableReference>

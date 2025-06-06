@@ -18,9 +18,9 @@ enum Theme {
     static let buttonHeight: CGFloat = 56
     
     static let primaryColor = Color.white // White for primary elements
-    static let backgroundColor = Color(red: 0.1, green: 0.05, blue: 0.2) // Dark purple base
-    static let gradientStart = Color(red: 0.4, green: 0.2, blue: 0.6) // Purple gradient start
-    static let gradientEnd = Color(red: 0.1, green: 0.05, blue: 0.2) // Purple gradient end
+    static let backgroundColor = Color(red: 0.02, green: 0.02, blue: 0.08) // YOUR NAVY BASE
+    static let gradientStart = Color(red: 0.05, green: 0.05, blue: 0.15) // YOUR NAVY GRADIENT
+    static let gradientEnd = Color(red: 0.02, green: 0.02, blue: 0.08) // YOUR NAVY GRADIENT END
     static let secondaryBackgroundColor = Color(white: 1.0).opacity(0.1) // Subtle white overlay
     static let textColor = Color.white
     
