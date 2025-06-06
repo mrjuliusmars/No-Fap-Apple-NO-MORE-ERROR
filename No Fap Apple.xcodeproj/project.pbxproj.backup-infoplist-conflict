@@ -28,13 +28,41 @@
 		221966892DEAB94400B96095 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		2265474B2DEAC18100036F60 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		226AF49C2DE607E90031A358 /* No Fap Apple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Fap Apple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		226AF4A92DE607EA0031A358 /* No Fap AppleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap AppleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap Apple/Info.plist.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap AppleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226B34892DEABF6B00D57F4D /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		22BBDA8E2DEABD5700C71999 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2219668E2DEABAEC00B96095 /* Exceptions for "No Fap Apple" folder in "No Fap Apple" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"<?xml version=\"1.xml",
+				Assets.xcassets,
+				index.html,
+				Info.plist,
+			);
+			target = 226AF49B2DE607E90031A358 /* No Fap Apple */;
+		};
+		229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Avatar IV Video (2).mp4",
+			);
+			target = 226AF4B22DE607EA0031A358 /* No Fap AppleUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		226AF49E2DE607E90031A358 /* No Fap Apple */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2219668E2DEABAEC00B96095 /* Exceptions for "No Fap Apple" folder in "No Fap Apple" target */,
+			);
+			path = "No Fap Apple";
+			sourceTree = "<group>";
+		};
 		226AF4AC2DE607EA0031A358 /* No Fap AppleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "No Fap AppleTests";
@@ -42,6 +70,9 @@
 		};
 		226AF4B62DE607EA0031A358 /* No Fap AppleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */,
+			);
 			path = "No Fap AppleUITests";
 			sourceTree = "<group>";
 		};
@@ -90,6 +121,7 @@
 		226AF4932DE607E90031A358 = {
 			isa = PBXGroup;
 			children = (
+				226AF49E2DE607E90031A358 /* No Fap Apple */,
 				226AF4AC2DE607EA0031A358 /* No Fap AppleTests */,
 				226AF4B62DE607EA0031A358 /* No Fap AppleUITests */,
 				226AF49D2DE607E90031A358 /* Products */,
@@ -100,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				226AF49C2DE607E90031A358 /* No Fap Apple.app */,
-				226AF4A92DE607EA0031A358 /* No Fap AppleTests.xctest */,
+				226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */,
 				226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */,
 			);
 			name = Products;
@@ -131,6 +163,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				226AF49E2DE607E90031A358 /* No Fap Apple */,
+			);
 			name = "No Fap Apple";
 			packageProductDependencies = (
 			);
@@ -158,7 +193,7 @@
 			packageProductDependencies = (
 			);
 			productName = "No Fap AppleTests";
-			productReference = 226AF4A92DE607EA0031A358 /* No Fap AppleTests.xctest */;
+			productReference = 226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		226AF4B22DE607EA0031A358 /* No Fap AppleUITests */ = {
@@ -444,6 +479,8 @@
 				DEVELOPMENT_TEAM = B3TF3X6NPN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "No Fap Apple/NoFapApple/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "No Fap Apple/NoFapApple/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +509,7 @@
 				DEVELOPMENT_TEAM = B3TF3X6NPN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "No Fap Apple/NoFapApple/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

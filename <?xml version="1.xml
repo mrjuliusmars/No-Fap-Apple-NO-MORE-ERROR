@@ -1,0 +1,16 @@
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
+       <key>CFBundleName</key>
+       <string>No Fap Apple</string>
+       <key>CFBundleIdentifier</key>
+       <string>com.marshallhodge.nofapapple</string>
+       <key>CFBundleVersion</key>
+       <string>1.0</string>
+       <key>CFBundleShortVersionString</key>
+       <string>1.0</string>
+       <key>NSCameraUsageDescription</key>
+       <string>We use your front camera for the Goon Cam feature so you can see yourself in real time. No photos or videos are saved.</string>
+   </dict>
+   </plist>

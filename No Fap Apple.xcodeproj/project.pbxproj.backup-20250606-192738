@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2278B2262DF2CCE400489CA2 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2278B2252DF2CCE400489CA2 /* LiveKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		226AF4AA2DE607EA0031A358 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -28,13 +32,40 @@
 		221966892DEAB94400B96095 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		2265474B2DEAC18100036F60 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		226AF49C2DE607E90031A358 /* No Fap Apple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Fap Apple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		226AF4A92DE607EA0031A358 /* No Fap AppleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap AppleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap Apple/Info.plist.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap AppleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226B34892DEABF6B00D57F4D /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
+		2278B2372DF2FCFC00489CA2 /* NoFapApple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NoFapApple.xcodeproj; sourceTree = "<group>"; };
 		22BBDA8E2DEABD5700C71999 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2219668E2DEABAEC00B96095 /* Exceptions for "No Fap Apple" folder in "No Fap Apple" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"<?xml version=\"1.xml",
+				index.html,
+			);
+			target = 226AF49B2DE607E90031A358 /* No Fap Apple */;
+		};
+		229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Avatar IV Video (2).mp4",
+			);
+			target = 226AF4B22DE607EA0031A358 /* No Fap AppleUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		226AF49E2DE607E90031A358 /* No Fap Apple */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2219668E2DEABAEC00B96095 /* Exceptions for "No Fap Apple" folder in "No Fap Apple" target */,
+			);
+			path = "No Fap Apple";
+			sourceTree = "<group>";
+		};
 		226AF4AC2DE607EA0031A358 /* No Fap AppleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "No Fap AppleTests";
@@ -42,6 +73,9 @@
 		};
 		226AF4B62DE607EA0031A358 /* No Fap AppleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */,
+			);
 			path = "No Fap AppleUITests";
 			sourceTree = "<group>";
 		};
@@ -52,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2278B2262DF2CCE400489CA2 /* LiveKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +125,7 @@
 		226AF4932DE607E90031A358 = {
 			isa = PBXGroup;
 			children = (
+				226AF49E2DE607E90031A358 /* No Fap Apple */,
 				226AF4AC2DE607EA0031A358 /* No Fap AppleTests */,
 				226AF4B62DE607EA0031A358 /* No Fap AppleUITests */,
 				226AF49D2DE607E90031A358 /* Products */,
@@ -100,13 +136,18 @@
 			isa = PBXGroup;
 			children = (
 				226AF49C2DE607E90031A358 /* No Fap Apple.app */,
-				226AF4A92DE607EA0031A358 /* No Fap AppleTests.xctest */,
+				226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */,
 				226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 		226B348C2DEABF6B00D57F4D /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2278B2382DF2FCFC00489CA2 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
@@ -131,8 +172,12 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				226AF49E2DE607E90031A358 /* No Fap Apple */,
+			);
 			name = "No Fap Apple";
 			packageProductDependencies = (
+				2278B2252DF2CCE400489CA2 /* LiveKit */,
 			);
 			productName = "No Fap Apple";
 			productReference = 226AF49C2DE607E90031A358 /* No Fap Apple.app */;
@@ -158,7 +203,7 @@
 			packageProductDependencies = (
 			);
 			productName = "No Fap AppleTests";
-			productReference = 226AF4A92DE607EA0031A358 /* No Fap AppleTests.xctest */;
+			productReference = 226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		226AF4B22DE607EA0031A358 /* No Fap AppleUITests */ = {
@@ -218,6 +263,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				229E5ACD2DEB2C9000E37297 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				2278B2242DF2CCE400489CA2 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 226AF49D2DE607E90031A358 /* Products */;
@@ -242,6 +288,10 @@
 				{
 					ProductGroup = 226B348C2DEABF6B00D57F4D /* Products */;
 					ProjectRef = 226B34892DEABF6B00D57F4D /* No Fap Apple.xcodeproj */;
+				},
+				{
+					ProductGroup = 2278B2382DF2FCFC00489CA2 /* Products */;
+					ProjectRef = 2278B2372DF2FCFC00489CA2 /* NoFapApple.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -444,6 +494,8 @@
 				DEVELOPMENT_TEAM = B3TF3X6NPN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "No Fap Apple/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "No Fap Apple/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +524,7 @@
 				DEVELOPMENT_TEAM = B3TF3X6NPN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "No Fap Apple/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,8 +552,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Juliusmars.No-Fap-Apple-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "No Fap Apple/Info.plist";
+				PRODUCT_NAME = "No Fap Apple/Info.plist";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -517,8 +570,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Juliusmars.No-Fap-Apple-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "No Fap Apple/Info.plist";
+				PRODUCT_NAME = "No Fap Apple/Info.plist";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -600,6 +653,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2278B2242DF2CCE400489CA2 /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
 		229E5ACD2DEB2C9000E37297 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
@@ -609,6 +670,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2278B2252DF2CCE400489CA2 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2278B2242DF2CCE400489CA2 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 226AF4942DE607E90031A358 /* Project object */;
 }
