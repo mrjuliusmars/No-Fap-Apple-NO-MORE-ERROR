@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		221CFA352DF6CB0800D00B09 /* App.logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 221CFA342DF6CB0800D00B09 /* App.logo.png */; };
-		221CFA3D2DF6D5C300D00B09 /* APP LOGO PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */; };
+		2278B2262DF2CCE400489CA2 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2278B2252DF2CCE400489CA2 /* LiveKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +30,11 @@
 /* Begin PBXFileReference section */
 		2208AB882DEAC1CC00A53DC4 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		221966892DEAB94400B96095 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
-		221CFA342DF6CB0800D00B09 /* App.logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App.logo.png; sourceTree = "<group>"; };
-		221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP LOGO PNG.png"; sourceTree = "<group>"; };
 		2265474B2DEAC18100036F60 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		226AF49C2DE607E90031A358 /* No Fap Apple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Fap Apple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap Apple/Info.plist.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap AppleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226B34892DEABF6B00D57F4D /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
+		2278B2372DF2FCFC00489CA2 /* NoFapApple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NoFapApple.xcodeproj; sourceTree = "<group>"; };
 		22BBDA8E2DEABD5700C71999 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,9 +42,17 @@
 		2219668E2DEABAEC00B96095 /* Exceptions for "No Fap Apple" folder in "No Fap Apple" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				"<?xml version=\"1.xml",
+				index.html,
 			);
 			target = 226AF49B2DE607E90031A358 /* No Fap Apple */;
+		};
+		229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Avatar IV Video (2).mp4",
+			);
+			target = 226AF4B22DE607EA0031A358 /* No Fap AppleUITests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -67,6 +72,9 @@
 		};
 		226AF4B62DE607EA0031A358 /* No Fap AppleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */,
+			);
 			path = "No Fap AppleUITests";
 			sourceTree = "<group>";
 		};
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2278B2262DF2CCE400489CA2 /* LiveKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +124,6 @@
 		226AF4932DE607E90031A358 = {
 			isa = PBXGroup;
 			children = (
-				221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */,
-				221CFA342DF6CB0800D00B09 /* App.logo.png */,
 				226AF49E2DE607E90031A358 /* No Fap Apple */,
 				226AF4AC2DE607EA0031A358 /* No Fap AppleTests */,
 				226AF4B62DE607EA0031A358 /* No Fap AppleUITests */,
@@ -128,13 +135,17 @@
 			isa = PBXGroup;
 			children = (
 				226AF49C2DE607E90031A358 /* No Fap Apple.app */,
-				226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */,
 				226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 		226B348C2DEABF6B00D57F4D /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2278B2382DF2FCFC00489CA2 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 			);
 			name = "No Fap Apple";
 			packageProductDependencies = (
+				2278B2252DF2CCE400489CA2 /* LiveKit */,
 			);
 			productName = "No Fap Apple";
 			productReference = 226AF49C2DE607E90031A358 /* No Fap Apple.app */;
@@ -189,7 +201,6 @@
 			packageProductDependencies = (
 			);
 			productName = "No Fap AppleTests";
-			productReference = 226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		226AF4B22DE607EA0031A358 /* No Fap AppleUITests */ = {
@@ -249,6 +260,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				229E5ACD2DEB2C9000E37297 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				2278B2242DF2CCE400489CA2 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 226AF49D2DE607E90031A358 /* Products */;
@@ -274,6 +286,10 @@
 					ProductGroup = 226B348C2DEABF6B00D57F4D /* Products */;
 					ProjectRef = 226B34892DEABF6B00D57F4D /* No Fap Apple.xcodeproj */;
 				},
+				{
+					ProductGroup = 2278B2382DF2FCFC00489CA2 /* Products */;
+					ProjectRef = 2278B2372DF2FCFC00489CA2 /* NoFapApple.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -289,8 +305,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221CFA352DF6CB0800D00B09 /* App.logo.png in Resources */,
-				221CFA3D2DF6D5C300D00B09 /* APP LOGO PNG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,8 +549,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "No Fap Apple/Info.plist";
-				PRODUCT_NAME = "No Fap Apple/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.nofapapple";
+				PRODUCT_NAME = "No Fap Apple";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,8 +567,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "No Fap Apple/Info.plist";
-				PRODUCT_NAME = "No Fap Apple/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.nofapapple";
+				PRODUCT_NAME = "No Fap Apple";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -636,6 +650,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2278B2242DF2CCE400489CA2 /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
 		229E5ACD2DEB2C9000E37297 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
@@ -645,6 +667,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2278B2252DF2CCE400489CA2 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2278B2242DF2CCE400489CA2 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 226AF4942DE607E90031A358 /* Project object */;
 }

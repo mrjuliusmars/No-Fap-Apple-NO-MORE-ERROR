@@ -59,7 +59,7 @@ struct AnalysisResultView: View {
                     HStack {
                         Spacer()
                         
-                        Text("OVERKUM")
+                        Text("UNFAP")
                             .font(.system(size: 24, weight: .black, design: .rounded))
                             .tracking(1)
                             .foregroundColor(.white)

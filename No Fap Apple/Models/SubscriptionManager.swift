@@ -10,9 +10,9 @@ class SubscriptionManager: ObservableObject {
     @Published var userCancelledPurchase: Bool = false
     
     // Product IDs - match exactly with StoreKit.storekit
-    private let yearlyProductID = "overkum_yearly_29_99"
-    private let discountProductID = "overkum_yearly_19_99"
-    private let freeTrialProductID = "overkum_trial_19_99"
+    private let yearlyProductID = "nuro_yearly_29_99"
+    private let discountProductID = "nuro_yearly_19_99"
+    private let freeTrialProductID = "nuro_trial_19_99"
     
     // UserDefaults keys
     private let isSubscribedKey = "isSubscribed"

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		221CFA352DF6CB0800D00B09 /* App.logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 221CFA342DF6CB0800D00B09 /* App.logo.png */; };
-		221CFA3D2DF6D5C300D00B09 /* APP LOGO PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */; };
+		22D4EC9D2DF1631400C3EB04 /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22D4EC9C2DF1631400C3EB04 /* File.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +30,14 @@
 /* Begin PBXFileReference section */
 		2208AB882DEAC1CC00A53DC4 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		221966892DEAB94400B96095 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
-		221CFA342DF6CB0800D00B09 /* App.logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App.logo.png; sourceTree = "<group>"; };
-		221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP LOGO PNG.png"; sourceTree = "<group>"; };
 		2265474B2DEAC18100036F60 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		226AF49C2DE607E90031A358 /* No Fap Apple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Fap Apple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap Apple/Info.plist.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap AppleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226B34892DEABF6B00D57F4D /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		22BBDA8E2DEABD5700C71999 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
+		22D4EC9B2DF162F500C3EB04 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
+		22D4EC9C2DF1631400C3EB04 /* File.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -115,12 +114,12 @@
 		226AF4932DE607E90031A358 = {
 			isa = PBXGroup;
 			children = (
-				221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */,
-				221CFA342DF6CB0800D00B09 /* App.logo.png */,
+				22D4EC9B2DF162F500C3EB04 /* Untitled.swift */,
 				226AF49E2DE607E90031A358 /* No Fap Apple */,
 				226AF4AC2DE607EA0031A358 /* No Fap AppleTests */,
 				226AF4B62DE607EA0031A358 /* No Fap AppleUITests */,
 				226AF49D2DE607E90031A358 /* Products */,
+				22D4EC9C2DF1631400C3EB04 /* File.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,8 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221CFA352DF6CB0800D00B09 /* App.logo.png in Resources */,
-				221CFA3D2DF6D5C300D00B09 /* APP LOGO PNG.png in Resources */,
+				22D4EC9D2DF1631400C3EB04 /* File.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

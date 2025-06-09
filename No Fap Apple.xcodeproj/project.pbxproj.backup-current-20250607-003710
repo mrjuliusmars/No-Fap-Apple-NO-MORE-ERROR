@@ -6,11 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		221CFA352DF6CB0800D00B09 /* App.logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 221CFA342DF6CB0800D00B09 /* App.logo.png */; };
-		221CFA3D2DF6D5C300D00B09 /* APP LOGO PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		226AF4AA2DE607EA0031A358 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,11 +26,9 @@
 /* Begin PBXFileReference section */
 		2208AB882DEAC1CC00A53DC4 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		221966892DEAB94400B96095 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
-		221CFA342DF6CB0800D00B09 /* App.logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App.logo.png; sourceTree = "<group>"; };
-		221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP LOGO PNG.png"; sourceTree = "<group>"; };
 		2265474B2DEAC18100036F60 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		226AF49C2DE607E90031A358 /* No Fap Apple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Fap Apple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap Apple/Info.plist.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226AF4A92DE607EA0031A358 /* No Fap Apple/Info.plist.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "No Fap Apple/Info.plist.xctest"; path = "No Fap AppleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AF4B32DE607EA0031A358 /* No Fap AppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No Fap AppleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226B34892DEABF6B00D57F4D /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
 		22BBDA8E2DEABD5700C71999 /* No Fap Apple.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "No Fap Apple.xcodeproj"; sourceTree = "<group>"; };
@@ -45,9 +38,17 @@
 		2219668E2DEABAEC00B96095 /* Exceptions for "No Fap Apple" folder in "No Fap Apple" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				"<?xml version=\"1.xml",
+				index.html,
 			);
 			target = 226AF49B2DE607E90031A358 /* No Fap Apple */;
+		};
+		229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Avatar IV Video (2).mp4",
+			);
+			target = 226AF4B22DE607EA0031A358 /* No Fap AppleUITests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -67,6 +68,9 @@
 		};
 		226AF4B62DE607EA0031A358 /* No Fap AppleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				229E5AC22DEB198C00E37297 /* Exceptions for "No Fap AppleUITests" folder in "No Fap AppleUITests" target */,
+			);
 			path = "No Fap AppleUITests";
 			sourceTree = "<group>";
 		};
@@ -115,8 +119,6 @@
 		226AF4932DE607E90031A358 = {
 			isa = PBXGroup;
 			children = (
-				221CFA3C2DF6D5C300D00B09 /* APP LOGO PNG.png */,
-				221CFA342DF6CB0800D00B09 /* App.logo.png */,
 				226AF49E2DE607E90031A358 /* No Fap Apple */,
 				226AF4AC2DE607EA0031A358 /* No Fap AppleTests */,
 				226AF4B62DE607EA0031A358 /* No Fap AppleUITests */,
@@ -289,8 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221CFA352DF6CB0800D00B09 /* App.logo.png in Resources */,
-				221CFA3D2DF6D5C300D00B09 /* APP LOGO PNG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,8 +477,6 @@
 				DEVELOPMENT_TEAM = B3TF3X6NPN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "No Fap Apple/Info.plist";
-				"INFOPLIST_FILE[sdk=*]" = "No Fap Apple/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -507,7 +505,6 @@
 				DEVELOPMENT_TEAM = B3TF3X6NPN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "No Fap Apple/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -535,8 +532,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "No Fap Apple/Info.plist";
-				PRODUCT_NAME = "No Fap Apple/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juliusmars.No-Fap-Apple-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,8 +550,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "No Fap Apple/Info.plist";
-				PRODUCT_NAME = "No Fap Apple/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juliusmars.No-Fap-Apple-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

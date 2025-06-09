@@ -13,7 +13,9 @@
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>$(PRODUCT_NAME)</string>
+    <string>Unfap</string>
+    <key>CFBundleDisplayName</key>
+    <string>Unfap</string>
     <key>CFBundlePackageType</key>
     <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
     <key>CFBundleShortVersionString</key>
@@ -37,11 +39,23 @@
             <key>UIApplicationShortcutItemTitle</key>
             <string>🎁 Try for Free</string>
             <key>UIApplicationShortcutItemType</key>
-            <string>com.overkum.FreeTrial</string>
+            			<string>com.nuro.FreeTrial</string>
         </dict>
     </array>
     <key>UIApplicationSupportsIndirectInputEvents</key>
     <true/>
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>UNFAP_iOS_icon_oversized_text_full_FP_slice_thicker</string>
+            </array>
+            <key>CFBundleIconName</key>
+            <string>AppIcon</string>
+        </dict>
+    </dict>
     <key>UILaunchScreen</key>
     <dict/>
     <key>UIRequiredDeviceCapabilities</key>

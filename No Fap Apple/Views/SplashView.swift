@@ -1,162 +1,121 @@
 import SwiftUI
 
 struct SplashView: View {
-    @State private var logoScale: CGFloat = 0.8
+    @State private var logoScale: CGFloat = 0.5
     @State private var logoOpacity: Double = 0
-    @State private var contentOffset: CGFloat = 30
-    @State private var contentOpacity: Double = 0
-    @State private var buttonScale: CGFloat = 0.9
-    @State private var showWelcome = false
+    @State private var titleOffset: CGFloat = 20
+    @State private var titleOpacity: Double = 0
+    @State private var taglineOffset: CGFloat = 20
+    @State private var taglineOpacity: Double = 0
     @State private var glowIntensity: Double = 0.3
+    @State private var isVisible = false
+    @State private var auraRotation: Double = 0
+    @State private var auraScale: CGFloat = 1.0
+    @State private var energyPulse: CGFloat = 1.0
+    @State private var lifeforceScale: CGFloat = 1.0
+    @State private var vitalityPulse: CGFloat = 1.0
+    @State private var coreGlow: Double = 0.8
+    @State private var outerEnergy: CGFloat = 1.0
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                // Clean background
-                LinearGradient(
-                    colors: [
-                        Color(red: 0.08, green: 0.15, blue: 0.28),   // Light navy top
-                        Color(red: 0.06, green: 0.12, blue: 0.22),   // Slightly deeper navy
-                        Color(red: 0.05, green: 0.1, blue: 0.2)      // Consistent light navy bottom
-                    ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-                .ignoresSafeArea()
+                // Clean background - same as app
+                Theme.backgroundGradient
+                    .ignoresSafeArea()
                 
+                // Main content - centered group like screenshot
                 VStack(spacing: 0) {
                     Spacer()
+                        .frame(height: 120)
                     
-                    // Clean logo section
-                    VStack(spacing: 48) {
-                        // Simple golden circle with subtle glow
+                    // Centered logo and text group
+                    VStack(spacing: 40) {
+                        // Animated CleanMinimalistOrb
                         ZStack {
-                            // Subtle glow
-                            Circle()
-                                .fill(
-                                    RadialGradient(
-                                        colors: [
-                                            Color.yellow.opacity(glowIntensity * 0.6),
-                                            Color.clear
-                                        ],
-                                        center: .center,
-                                        startRadius: 0,
-                                        endRadius: 80
-                                    )
-                                )
-                                .frame(width: 160, height: 160)
-                            
-                            // Main circle
-                            Circle()
-                                .fill(
-                                    LinearGradient(
-                                        colors: [
-                                            Color(red: 1.0, green: 0.95, blue: 0.8),
-                                            Color(red: 1.0, green: 0.85, blue: 0.4),
-                                            Color(red: 0.9, green: 0.7, blue: 0.2)
-                                        ],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                )
-                                .frame(width: 80, height: 80)
-                                .shadow(color: Color.yellow.opacity(0.4), radius: 20, x: 0, y: 8)
-                            
-                            // Clean icon
-                            Image(systemName: "crown.fill")
-                                .font(.system(size: 24, weight: .semibold))
-                                .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.23))
+                            CleanMinimalistOrb(
+                                auraScale: auraScale,
+                                lifeforceScale: lifeforceScale,
+                                energyPulse: energyPulse,
+                                vitalityPulse: vitalityPulse,
+                                coreGlow: coreGlow,
+                                outerEnergy: outerEnergy,
+                                auraRotation: auraRotation,
+                                streakDays: 1,
+                                showProgressRing: false
+                            )
+                            .frame(width: 200, height: 200)
+                            .opacity(logoOpacity)
+                            .scaleEffect(logoScale)
                         }
-                        .scaleEffect(logoScale)
-                        .opacity(logoOpacity)
                         
-                        // Clean typography
-                        VStack(spacing: 16) {
-                            Text("Overkum")
-                                .font(.system(size: 32, weight: .black, design: .rounded))
-                                .tracking(2)
-                                .foregroundColor(.white)
+                        // Typography group
+                        VStack(spacing: 8) {
+                            // App Logo with fallback
+                            Group {
+                                if let _ = UIImage(named: "APP LOGO PNG") {
+                                    Image("APP LOGO PNG")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 120, height: 120)
+                                } else {
+                                    // Fallback to text if image not found
+                                    Text("UNFAP")
+                                        .font(.system(size: 50, weight: .black, design: .rounded))
+                                        .tracking(4)
+                                        .foregroundColor(.white)
+                                }
+                            }
+                            .offset(y: titleOffset)
+                            .opacity(titleOpacity)
                             
-                            Text("Break free. Stay strong.")
-                                .font(.system(size: 18, weight: .medium))
-                                .foregroundColor(Color.white.opacity(0.7))
-                                .tracking(0.5)
+                            // Tagline
+                            Text("Reclaim Control.")
+                                .font(.system(size: 18, weight: .medium, design: .rounded))
+                                .foregroundColor(.white.opacity(0.9))
+                                .tracking(1.2)
+                                .offset(y: taglineOffset)
+                                .opacity(taglineOpacity)
                         }
-                        .offset(y: contentOffset)
-                        .opacity(contentOpacity)
                     }
                     
                     Spacer()
-                    
-                    // Clean call-to-action
-                    VStack(spacing: 24) {
-                        Text("Your journey to freedom starts here")
-                            .font(.system(size: 16, weight: .medium))
-                            .foregroundColor(Color.white.opacity(0.6))
-                            .offset(y: contentOffset)
-                            .opacity(contentOpacity)
-                        
-                        Button(action: {
-                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                                showWelcome = true
-                            }
-                        }) {
-                            HStack(spacing: 12) {
-                                Text("Get Started")
-                                    .font(.system(size: 17, weight: .semibold))
-                                
-                                Image(systemName: "arrow.right")
-                                    .font(.system(size: 16, weight: .semibold))
-                            }
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 54)
-                            .background(
-                                LinearGradient(
-                                    colors: [
-                                        Color(red: 1.0, green: 0.95, blue: 0.8),
-                                        Color(red: 1.0, green: 0.85, blue: 0.4)
-                                    ],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.23))
-                            .cornerRadius(27)
-                            .shadow(color: Color.yellow.opacity(0.3), radius: 15, x: 0, y: 8)
-                        }
-                        .scaleEffect(buttonScale)
-                        .opacity(contentOpacity)
-                        .padding(.horizontal, 48)
-                        .padding(.bottom, 80)
-                    }
                 }
             }
         }
         .onAppear {
             startCleanAnimations()
         }
-        .fullScreenCover(isPresented: $showWelcome) {
-            WelcomeView()
-        }
     }
     
     private func startCleanAnimations() {
-        // Logo entrance
-        withAnimation(.spring(response: 1.0, dampingFraction: 0.8).delay(0.2)) {
+        // Logo entrance - smooth scale up
+        withAnimation(.spring(response: 0.8, dampingFraction: 0.8).delay(0.3)) {
             logoScale = 1.0
             logoOpacity = 1.0
         }
         
-        // Content entrance
-        withAnimation(.spring(response: 0.8, dampingFraction: 0.8).delay(0.6)) {
-            contentOffset = 0
-            contentOpacity = 1.0
-            buttonScale = 1.0
+        // Text group appears together shortly after logo
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.9).delay(0.8)) {
+            titleOffset = 0
+            titleOpacity = 1.0
+            taglineOffset = 0
+            taglineOpacity = 1.0
         }
         
-        // Subtle glow pulse
+        // Orb animations (copied from dashboard)
         withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true).delay(1.0)) {
-            glowIntensity = 0.8
+            auraScale = 1.08
+            energyPulse = 1.12
+            vitalityPulse = 1.10
+            lifeforceScale = 1.06
+            outerEnergy = 1.04
+        }
+        withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true).delay(1.2)) {
+            coreGlow = 1.0
+        }
+        withAnimation(.linear(duration: 18.0).repeatForever(autoreverses: false)) {
+            auraRotation = 360
         }
     }
 }
@@ -164,3 +123,4 @@ struct SplashView: View {
 #Preview {
     SplashView()
 } 
+

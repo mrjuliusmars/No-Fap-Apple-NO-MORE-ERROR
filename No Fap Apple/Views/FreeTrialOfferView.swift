@@ -53,7 +53,7 @@ struct FreeTrialOfferView: View {
                 
                 VStack(spacing: 40) {
                     // Logo area with more top spacing
-                    Text("Overkum")
+                    Text("UNFAP")
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                         .foregroundColor(.white)
                         .opacity(isVisible ? 1.0 : 0.0)

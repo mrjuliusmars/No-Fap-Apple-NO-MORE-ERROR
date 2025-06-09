@@ -72,7 +72,7 @@ struct WelcomeView: View {
                     VStack(spacing: 0) {
                         // NO FAP logo - positioned under camera/status bar
                         VStack(spacing: Theme.spacing8) {
-                            Text("OVERKUM")
+                            Text("UNFAP")
                                 .font(.system(size: 32, weight: .black, design: .rounded))
                                 .tracking(2)
                                 .foregroundColor(.white)

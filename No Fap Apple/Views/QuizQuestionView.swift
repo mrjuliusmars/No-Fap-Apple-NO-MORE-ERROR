@@ -96,7 +96,7 @@ struct QuizQuestionView: View {
                             
                             Spacer()
                             
-                            Text("OVERKUM")
+                            Text("UNFAP")
                                 .font(.system(size: 28, weight: .black, design: .rounded))
                                 .tracking(1)
                                 .foregroundColor(.white)

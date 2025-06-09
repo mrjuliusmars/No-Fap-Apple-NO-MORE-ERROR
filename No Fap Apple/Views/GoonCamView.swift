@@ -37,7 +37,7 @@ struct GoonCamView: View {
                 HStack {
                     Text("GOON CAM")
                         .font(.system(size: 28, weight: .black, design: .rounded))
-                        .foregroundColor(Theme.primaryNavy)
+                        .foregroundColor(.white)
                         .shadow(color: .black.opacity(0.5), radius: 8, x: 0, y: 2)
                         .padding(.leading, 20)
                     Spacer()

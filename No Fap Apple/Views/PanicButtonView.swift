@@ -7,8 +7,7 @@ struct PanicButtonView: View {
     @State private var showEmergencyContacts = false
     @State private var showMotivationalMessage = false
     @State private var messageOpacity = 0.0
-    @State private var showBreathingGame = false
-    @State private var showMoveWithGoggins = false
+
     @State private var showGoonCam = false
     @State private var breathPhase: BreathPhase = .inhale
     @State private var breathScale: CGFloat = 1.0
@@ -110,9 +109,7 @@ struct PanicButtonView: View {
                         Button(action: {
                             withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                                 selectedTechnique = title
-                                if title == "Breathe" {
-                                    showBreathingGame = true
-                                } else if title == "Goon Cam" {
+                                if title == "Goon Cam" {
                                     showGoonCam = true
                                 } else if title == "Move" {
                                     showMoveVideo = true
@@ -177,12 +174,7 @@ struct PanicButtonView: View {
             }
             startAnimations()
         }
-        .fullScreenCover(isPresented: $showBreathingGame) {
-            BreathingGameView(onDone: { showBreathingGame = false })
-        }
-        .fullScreenCover(isPresented: $showMoveWithGoggins) {
-            MoveWithGogginsView(onDone: { showMoveWithGoggins = false })
-        }
+
         .fullScreenCover(isPresented: $showGoonCam) {
             GoonCamView(onDone: { showGoonCam = false })
         }

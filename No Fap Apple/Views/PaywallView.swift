@@ -56,14 +56,14 @@ struct PaywallView: View {
                 
                 ScrollView {
                     VStack(spacing: 0) {
-                        // Top spacing
+                        // Reduced top spacing to center content
                         Rectangle()
                             .fill(Color.clear)
-                            .frame(height: geometry.safeAreaInsets.top + 20)
+                            .frame(height: geometry.safeAreaInsets.top + 60)
                         
-                        VStack(spacing: 24) {
+                        VStack(spacing: 32) {
                             // Hero section
-                            VStack(spacing: 16) {
+                            VStack(spacing: 24) {
                                 Text("\(userName), we've made you\na custom plan.")
                                     .font(.system(size: 26, weight: .bold, design: .rounded))
                                     .foregroundColor(.white)
@@ -73,7 +73,7 @@ struct PaywallView: View {
                                     .opacity(isVisible ? 1.0 : 0.0)
                                     .animation(.easeOut(duration: 0.8).delay(0.1), value: isVisible)
                                 
-                                VStack(spacing: 12) {
+                                VStack(spacing: 16) {
                                     Text("You will quit porn by:")
                                         .font(.system(size: 15, weight: .medium))
                                         .foregroundColor(.white.opacity(0.8))
@@ -102,126 +102,81 @@ struct PaywallView: View {
                             }
                             .padding(.horizontal, 24)
                             
-                            // Elegant divider
-                            HStack {
-                                Rectangle()
-                                    .fill(Color.white.opacity(0.2))
-                                    .frame(height: 1)
-                                    .frame(width: 40)
-                                
-                                Circle()
-                                    .fill(Color.white.opacity(0.4))
-                                    .frame(width: 4, height: 4)
-                                
-                                Rectangle()
-                                    .fill(Color.white.opacity(0.2))
-                                    .frame(height: 1)
-                                    .frame(width: 40)
-                            }
-                            .opacity(isVisible ? 1.0 : 0.0)
-                            .animation(.easeOut(duration: 0.8).delay(0.4), value: isVisible)
-                            
-                            // Brand section
-                            VStack(spacing: 12) {
-                                // Stars
-                                HStack(spacing: 8) {
-                                    Image(systemName: "laurel.leading")
-                                        .font(.system(size: 18, weight: .medium))
-                                        .foregroundColor(.white.opacity(0.7))
+                            // Elegant divider with optimized spacing
+                            VStack(spacing: 32) {
+                                HStack(spacing: 0) {
+                                    Rectangle()
+                                        .fill(Color.white.opacity(0.2))
+                                        .frame(height: 1)
+                                        .frame(width: 60)
                                     
-                                    HStack(spacing: 3) {
-                                        ForEach(0..<5, id: \.self) { index in
-                                            Image(systemName: "star.fill")
-                                                .font(.system(size: 13, weight: .bold))
-                                                .foregroundColor(.yellow)
-                                                .opacity(isVisible ? 1.0 : 0.0)
-                                                .animation(.easeOut(duration: 0.8).delay(0.5 + Double(index) * 0.05), value: isVisible)
-                                        }
-                                    }
+                                    Circle()
+                                        .fill(Color.white.opacity(0.4))
+                                        .frame(width: 4, height: 4)
+                                        .padding(.horizontal, 8)
                                     
-                                    Image(systemName: "laurel.trailing")
-                                        .font(.system(size: 18, weight: .medium))
-                                        .foregroundColor(.white.opacity(0.7))
+                                    Rectangle()
+                                        .fill(Color.white.opacity(0.2))
+                                        .frame(height: 1)
+                                        .frame(width: 60)
                                 }
+                                .frame(maxWidth: .infinity)
+                                .multilineTextAlignment(.center)
                                 .opacity(isVisible ? 1.0 : 0.0)
-                                .animation(.easeOut(duration: 0.8).delay(0.5), value: isVisible)
+                                .animation(.easeOut(duration: 0.8).delay(0.4), value: isVisible)
                                 
-                                VStack(spacing: 8) {
-                                    Text("Become the best of\nyourself with Overkum")
-                                        .font(.system(size: 28, weight: .bold, design: .rounded))
-                                        .foregroundColor(.white)
-                                        .multilineTextAlignment(.center)
-                                        .lineSpacing(3)
-                                        .shadow(color: .black.opacity(0.3), radius: 6, x: 0, y: 3)
-                                        .opacity(isVisible ? 1.0 : 0.0)
-                                        .animation(.easeOut(duration: 0.8).delay(0.6), value: isVisible)
+                                // Brand section
+                                VStack(spacing: 16) {
+                                    // Stars
+                                    HStack(spacing: 8) {
+                                        Image(systemName: "laurel.leading")
+                                            .font(.system(size: 18, weight: .medium))
+                                            .foregroundColor(.white.opacity(0.7))
+                                        
+                                        HStack(spacing: 3) {
+                                            ForEach(0..<5, id: \.self) { index in
+                                                Image(systemName: "star.fill")
+                                                    .font(.system(size: 13, weight: .bold))
+                                                    .foregroundColor(.yellow)
+                                                    .opacity(isVisible ? 1.0 : 0.0)
+                                                    .animation(.easeOut(duration: 0.8).delay(0.5 + Double(index) * 0.05), value: isVisible)
+                                            }
+                                        }
+                                        
+                                        Image(systemName: "laurel.trailing")
+                                            .font(.system(size: 18, weight: .medium))
+                                            .foregroundColor(.white.opacity(0.7))
+                                    }
+                                    .opacity(isVisible ? 1.0 : 0.0)
+                                    .animation(.easeOut(duration: 0.8).delay(0.5), value: isVisible)
                                     
-                                    Text("Stronger. Healthier. Happier.")
-                                        .font(.system(size: 15, weight: .medium))
-                                        .foregroundColor(.white.opacity(0.8))
-                                        .opacity(isVisible ? 1.0 : 0.0)
-                                        .animation(.easeOut(duration: 0.8).delay(0.7), value: isVisible)
+                                    VStack(spacing: 8) {
+                                        Text("Become the best of\nyourself with UNFAP")
+                                            .font(.system(size: 28, weight: .bold, design: .rounded))
+                                            .foregroundColor(.white)
+                                            .multilineTextAlignment(.center)
+                                            .lineSpacing(3)
+                                            .shadow(color: .black.opacity(0.3), radius: 6, x: 0, y: 3)
+                                            .opacity(isVisible ? 1.0 : 0.0)
+                                            .animation(.easeOut(duration: 0.8).delay(0.6), value: isVisible)
+                                        
+                                        Text("Stronger. Healthier. Happier.")
+                                            .font(.system(size: 15, weight: .medium))
+                                            .foregroundColor(.white.opacity(0.8))
+                                            .opacity(isVisible ? 1.0 : 0.0)
+                                            .animation(.easeOut(duration: 0.8).delay(0.7), value: isVisible)
+                                    }
                                 }
+                                .padding(.horizontal, 24)
                             }
-                            .padding(.horizontal, 24)
                             
-                            // Benefits grid
-                            VStack(spacing: 12) {
-                                // First row - 3 benefits
-                                HStack(spacing: 12) {
-                                    BenefitBadge(
-                                        icon: "figure.strengthtraining.functional",
-                                        title: "Increased\nTestosterone",
-                                        backgroundColor: Color.blue
-                                    )
-                                    .opacity(isVisible ? 1.0 : 0.0)
-                                    .animation(.easeOut(duration: 0.8).delay(0.8), value: isVisible)
-                                    
-                                    BenefitBadge(
-                                        icon: "bolt.fill",
-                                        title: "Increased\nEnergy",
-                                        backgroundColor: Color.green
-                                    )
-                                    .opacity(isVisible ? 1.0 : 0.0)
-                                    .animation(.easeOut(duration: 0.8).delay(0.85), value: isVisible)
-                                    
-                                    BenefitBadge(
-                                        icon: "sparkles",
-                                        title: "Increased\nConfidence",
-                                        backgroundColor: Color.yellow
-                                    )
-                                    .opacity(isVisible ? 1.0 : 0.0)
-                                    .animation(.easeOut(duration: 0.8).delay(0.9), value: isVisible)
-                                }
-                                
-                                // Second row - 2 benefits centered
-                                HStack(spacing: 16) {
-                                    Spacer()
-                                    BenefitBadge(
-                                        icon: "chart.line.uptrend.xyaxis",
-                                        title: "Increased\nMotivation",
-                                        backgroundColor: Color.blue
-                                    )
-                                    .opacity(isVisible ? 1.0 : 0.0)
-                                    .animation(.easeOut(duration: 0.8).delay(0.95), value: isVisible)
-                                    
-                                    BenefitBadge(
-                                        icon: "person.2.fill",
-                                        title: "Improved\nRelationships",
-                                        backgroundColor: Color.orange
-                                    )
-                                    .opacity(isVisible ? 1.0 : 0.0)
-                                    .animation(.easeOut(duration: 0.8).delay(1.0), value: isVisible)
-                                    Spacer()
-                                }
-                            }
-                            .padding(.horizontal, 24)
+
                         }
                         
-                        // Bottom spacing for fixed CTA
+                        // Reduced bottom spacing for tighter layout
                         Rectangle()
                             .fill(Color.clear)
-                            .frame(height: 40)
+                            .frame(height: 20)
                     }
                 }
                 

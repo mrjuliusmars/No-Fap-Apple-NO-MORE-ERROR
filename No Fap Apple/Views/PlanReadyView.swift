@@ -63,7 +63,7 @@ struct PlanReadyView: View {
                     // Clean top branding
                     VStack(spacing: Theme.spacing8) {
                         HStack {
-                            Text("OVERKUM")
+                            Text("UNFAP")
                                 .font(.system(size: 24, weight: .black, design: .rounded))
                                 .tracking(1)
                                 .foregroundColor(.white)

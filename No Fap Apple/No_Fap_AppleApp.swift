@@ -37,7 +37,7 @@ struct No_Fap_AppleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainAppFlowView()
+            AppRootView()
                 .environmentObject(shortcutHandler)
         }
     }

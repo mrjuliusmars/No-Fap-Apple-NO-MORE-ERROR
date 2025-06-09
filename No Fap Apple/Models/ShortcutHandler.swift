@@ -14,12 +14,12 @@ class ShortcutHandler: ObservableObject {
         print("📱 Handling shortcut: \(shortcutType)")
         
         switch shortcutType {
-        case "com.overkum.FreeTrial":
+        case "com.nuro.FreeTrial":
             // User tapped "Try for Free" from app deletion context menu
             shouldShowFreeTrial = true
             print("🎁 Free trial shortcut activated from app icon")
             
-        case "com.overkum.Feedback":
+        case "com.nuro.Feedback":
             // User wants to provide feedback
             print("💬 Feedback shortcut activated")
             
